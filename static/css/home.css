@@ -27,11 +27,11 @@ a{
     display: flex;
     flex-direction: row-reverse;
     top: 50%;
-    left: -30%;
+    left: -50%;
 }
 
 .side-nav li{
-    margin: .5em;
+    margin: 2em;
 }
 
 .side-nav li a{
@@ -147,7 +147,7 @@ a{
 
 @media only screen and (min-width: 400px){
     .side-nav{
-        left: -25%;
+        left: -40%;
     }
     .island{
         top: 35%;
@@ -156,7 +156,7 @@ a{
 
 @media only screen and (min-width: 475px){
     .side-nav{
-        left: -20%;
+        left: -35%;
     }
     .island{
         top: 33%;
@@ -165,7 +165,7 @@ a{
 
 @media only screen and (min-width: 550px){
     .side-nav{
-        left: -15%;
+        left: -30%;
     }
     .island{
         width: 60%;
@@ -179,7 +179,7 @@ a{
 
 @media only screen and (min-width: 650px){
     .side-nav{
-        left: -13%;
+        left: -25%;
     }
     .island{
         width: 50%;
@@ -190,7 +190,7 @@ a{
 
 @media only screen and (min-width: 745px){
     .side-nav{
-        left: -11%;
+        left: -20%;
     }
     .island{
         width: 50%;
@@ -201,7 +201,7 @@ a{
 
 @media only screen and (min-width: 875px){
     .side-nav{
-        left: -9%;
+        left: -15%;
     }
     .island{
         width: 40%;
@@ -232,13 +232,14 @@ a{
         top: 30%;
     }
     .side-nav{
+        left: -18%;
         font-size: 1.2em;
     }
 }
 
 @media only screen and (min-width: 1260px){
     .side-nav{
-        left: -8%;
+        left: -13%;
     }
     .island{
         top: 25%;
@@ -247,7 +248,7 @@ a{
 
 @media only screen and (min-width: 1400px){
     .side-nav{
-        left: -6%;
+        left: -13%;
     }
     .top-nav li{
         margin: 3em;
@@ -256,7 +257,7 @@ a{
 
 @media only screen and (min-width: 1600px){
     .side-nav{
-        left: -8%;
+        left: -12%;
         font-size: 1.5em;
     }
 }
