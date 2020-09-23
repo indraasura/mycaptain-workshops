@@ -1,0 +1,12 @@
+.row{
+    margin: 5em !important;
+}
+
+h3{
+    position: absolute;
+    margin: 2em;
+    top: 10%;
+    font-size: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+}

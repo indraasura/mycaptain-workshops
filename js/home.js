@@ -1,0 +1,27 @@
+var moon = document.getElementById('moon')
+var sun = document.getElementById('sun')
+var home = document.getElementById('home-section')
+var faq = document.getElementById('faq')
+var text = document.getElementById('text-container')
+var imgLight = document.getElementById('island-light')
+var imgDark = document.getElementById('island-dark')
+
+moon.addEventListener('click', (e)=>{
+    e.preventDefault()
+    sun.classList.toggle('hide')
+    moon.classList.toggle('hide')
+    home.classList.toggle('dark-theme')
+    text.classList.toggle('text-container-dark')
+    imgLight.classList.toggle('hide')
+    imgDark.classList.toggle('hide')
+})
+
+sun.addEventListener('click', (e)=>{
+    e.preventDefault()
+    sun.classList.toggle('hide')
+    moon.classList.toggle('hide')
+    home.classList.toggle('dark-theme')
+    text.classList.toggle('text-container-dark')
+    imgLight.classList.toggle('hide')
+    imgDark.classList.toggle('hide')
+})

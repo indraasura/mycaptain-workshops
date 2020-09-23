@@ -11,30 +11,35 @@
 
 <body>
     
-    <div class="home-section">
+    <div class="home-section" id="home-section">
         <!--Navigation bars-->
-        <ul class="side-nav">
-            <li><a href="#"> web dev</a></li>
+        <ul class="side-nav" id="side-nav">
+            <li><a href="./webdev.html"> web dev</a></li>
             <li><a href="#"> home</a></li>
-            <li><a href="#">full stack</a></li>
+            <li><a href="./fsd.html">full stack</a></li>
         </ul>
         <ul class="top-nav">
             <li>
-                <img src="" alt="moon">
+                <img src="../static/images/full-moon.png" alt="moon" class="theme-switcher" id="moon">
+                <img src="../static/images/sun.png" alt="sun" class="theme-switcher hide" id="sun">
             </li>
             <li>
-                <a href="#">FAQs</a>
+                <a href="#" class="faq" id="faq">FAQs</a>
             </li>
         </ul>
 
         <!--Text container-->
-        <div class="text-container">
+        <div class="text-container" id="text-container">
             <h1>Hi, I am Swarup Hegde</h1>
             <p>SME, Mycaptain : Web Dev | FSD</p>
             <h5>Select your workshop to see a 
                 breakdown of what we are going to do in 
-                the Live Discussions</h5>
+                the Live Discussions. <br><br><br>Let's have fun and learn something new!! </h5>
         </div>
+
+        <!--Images-->
+        <img src="../static/images/island-light.png" alt="island image" class="island" id="island-light">
+        <img src="../static/images/island-dark.png" alt="island image" class="island hide" id="island-dark">
     </div>
     <script src="../js/home.js"></script>
 
