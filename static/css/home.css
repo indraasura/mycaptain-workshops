@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -62,6 +63,25 @@ a{
 
 .top-nav li a{
     font-size: .8em;
+}
+
+.fa-instagram, .fa-github{
+    color: rgb(104, 103, 103);
+    font-weight: bolder;
+}
+
+.bottom-nav{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 2%;
+    justify-content: space-around;
+}
+
+.bottom-nav li a{
+    color: grey;
+    font-weight: bolder;
+    margin-left: .5em;
 }
 
 .text-container{
