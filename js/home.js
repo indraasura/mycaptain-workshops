@@ -5,6 +5,9 @@ var faq = document.getElementById('faq')
 var text = document.getElementById('text-container')
 var imgLight = document.getElementById('island-light')
 var imgDark = document.getElementById('island-dark')
+var acceptBtn = document.getElementById('accept-btn')
+var declineBtn = document.getElementById('decline-btn')
+var tnc = document.getElementById('terms')
 
 moon.addEventListener('click', (e)=>{
     e.preventDefault()
@@ -24,4 +27,10 @@ sun.addEventListener('click', (e)=>{
     text.classList.toggle('text-container-dark')
     imgLight.classList.toggle('hide')
     imgDark.classList.toggle('hide')
+})
+
+acceptBtn.addEventListener('click', (e) => {
+    e.preventDefault()
+    tnc.classList.toggle('hide')
+    home.classList.toggle('blur')
 })

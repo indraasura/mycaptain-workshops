@@ -122,6 +122,7 @@ a{
 .faq{
     color: rgb(104, 103, 103);
     font-weight: bolder;
+    margin-right: 2em;
 }
 
 @keyframes bob{
@@ -135,6 +136,60 @@ a{
         transform: translateY(0px);
     }
 }
+
+/* Blur option */
+.blur{
+    filter: blur(4.5px);
+}
+
+.terms{
+    position: absolute;
+    background: whitesmoke;
+    box-shadow: rgb(156, 155, 155) 5px 10px 8px;
+    width: 80%;
+    height: 83%;
+    z-index: 100;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+.terms h5{
+    text-align: center;
+    margin: 1.5em;
+    font-size: 1em;
+}
+
+.rules li{
+    margin: 2.2em;
+    font-size: .9em;
+}
+
+.terms-btn{
+    display: flex;
+    justify-content: space-between;
+    font-size: .9em;
+}
+
+.terms-btn a{
+    color: whitesmoke;
+    margin: 0 3em;
+}
+
+.accept-btn{
+    background: rgb(11, 87, 11);
+    padding: .5em;
+    border-radius: 3px;
+}
+
+.decline-btn{
+    background: rgb(167, 6, 6);
+    padding: .5em;
+    border-radius: 3px;
+}
+
+
 
 /* Dark theme */
 
@@ -173,6 +228,9 @@ a{
     .island{
         top: 35%;
     }
+    .terms{
+        height: 78%;
+    }
 }
 
 @media only screen and (min-width: 475px){
@@ -181,6 +239,9 @@ a{
     }
     .island{
         top: 33%;
+    }
+    .terms{
+        height: 70%;
     }
 }
 
@@ -195,6 +256,9 @@ a{
     }
     .theme-switcher{
         width: 11%;
+    }
+    .terms{
+        height: 65%;
     }
 }
 
@@ -217,6 +281,9 @@ a{
         width: 50%;
         top: 35%;
         left: 25%;
+    }
+    .terms{
+        height: 60%;
     }
 }
 
@@ -265,6 +332,10 @@ a{
     .island{
         top: 25%;
     }
+    .terms{
+        height: 65%;
+        font-size: 1.2em;
+    }
 }
 
 @media only screen and (min-width: 1400px){
@@ -281,4 +352,9 @@ a{
         left: -12%;
         font-size: 1.5em;
     }
+    .terms{
+        height: 60%;
+    }
 }
+
+
