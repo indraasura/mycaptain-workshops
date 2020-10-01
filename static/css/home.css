@@ -26,7 +26,14 @@ a{
     animation: fade 1.5s;
 }
 
-
+@keyframes fade{
+    from{
+        background: black;
+    }
+    to{
+        background: whitesmoke;
+    }
+}
 
 .side-nav{
     position: absolute;
