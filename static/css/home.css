@@ -20,7 +20,19 @@ a{
 .home-section{
     position: relative;
     height: 100vh;
-    background: whitesmoke;
+}
+
+.light-bg{
+    animation: fade 1.5s;
+}
+
+@keyframes fade{
+    from{
+        background: black;
+    }
+    to{
+        background: whitesmoke;
+    }
 }
 
 .side-nav{
@@ -145,7 +157,6 @@ a{
     width: 80%;
 }
 
-
 /* Blur option */
 .blur{
     filter: blur(4.5px);
@@ -204,6 +215,16 @@ a{
 
 .dark-theme{
     background: black;
+    animation: dark-fade 1.5s;
+}
+
+@keyframes dark-fade{
+    from{
+        background: whitesmoke;
+    }
+    to{
+        background: black;
+    }
 }
 
 .text-container-dark{
