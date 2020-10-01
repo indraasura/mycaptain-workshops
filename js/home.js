@@ -24,6 +24,7 @@ sun.addEventListener('click', (e)=>{
     sun.classList.toggle('hide')
     moon.classList.toggle('hide')
     home.classList.toggle('dark-theme')
+    home.classList.add('light-bg')
     text.classList.toggle('text-container-dark')
     imgLight.classList.toggle('hide')
     imgDark.classList.toggle('hide')
