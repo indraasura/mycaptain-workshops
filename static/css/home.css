@@ -209,6 +209,19 @@ a{
     border-radius: 3px;
 }
 
+.decline-section{
+    position: relative;
+    height: 100vh;
+    background: whitesmoke;
+}
+
+.decline-section img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 
 /* Dark theme */
