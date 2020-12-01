@@ -1,146 +1,305 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link rel="stylesheet" href="../static/css/home.css">
-  <link rel="stylesheet" href="../static/css/webdev.css">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163773895-3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web Development</title>
+	<meta name="description" content="A simple content slider with depth-like zoom functionality" />
+	<meta name="keywords" content="blueprint, template, slider, zoom, javascript, depth, 3d, css" />
+	<meta name="author" content="Codrops" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!-- Feather Icons -->
+	<link rel="stylesheet" type="text/css" href="../static/css/webdev.css">
+	<script src="../js/modernizr.custom.js"></script>
 
-    gtag('config', 'UA-163773895-3');
-  </script>
 
-  <title>SH : WD</title>
 </head>
 
-<body class="home-section" id="home-section">
+<body>
+	<!-- Main container -->
+	<div class="container">
+		<!-- Blueprint header -->
+		<ul class="header-content">
+			<li id="theme-switcher-light">
+				<img src="../static/images/full-moon.png" class="theme-switcher" id="moon" alt="theme-switcher">
+				<img src="../static/images/sun.png" class="theme-switcher hide" id="sun" alt="theme-switcher">
+			</li>
+		</ul>
 
-  <div>
+		<!-- Grid -->
+		<section class="slider">
+			<div class="slide slide--current" data-content="content-1">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="../static/images/starter.png" alt="iPhone" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-2"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Hors Devours</span><br>Introduction to web development</h2>
+			</div>
+			<div class="slide" data-content="content-2">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="../static/images/soup.png" alt="iPad Mini" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-4"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Soup</span><br>Wireframing - Do's and Don'ts of UI/UX design</h2>
+			</div>
+			<div class="slide" data-content="content-3">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="../static/images/fish.png" alt="MacBook" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-3"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Fish Dish</span><br>Examining the structure of a website</h2>
+			</div>
+			<div class="slide" data-content="content-4">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="../static/images/meat.png" alt="iMac" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-5"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Meat Dish</span><br>Introduction to CSS</h2>
+			</div>
+			<div class="slide" data-content="content-5">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="../static/images/main.png" alt="iMac" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-5"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Main Course</span><br>Diving deeper into CSS</h2>
 
-    <ul class="top-nav">
-      <li>
-        <h5><a href="../home.html" class="faq" id="faq" style="margin: 2em;">HOME</a></h5>
-      </li>
-    </ul>
+			</div>
+			<div class="slide" data-content="content-6">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="../static/images/salad.png" alt="iMac" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-5"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Salad</span><br>Media Queries with CSS
+				</h2>
+      </div>
+      
+      <div class="slide" data-content="content-7">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="../static/images/dessert.png" alt="iMac" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-5"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Dessert</span><br>CSS Animations and JS Events
+				</h2>
+      </div>
+      
+      <div class="slide" data-content="content-8">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="../static/images/drink.png" alt="iMac" />
+						<div class="preview">
+							<div class="zoomer__area zoomer__area--size-5"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Drink</span><br>Deploying our website : Github pages and Netlify
+				</h2>
+			</div>
 
-    <h3>Web Development Course</h3>
+			<nav class="slider__nav">
+				<button class="button button--nav-prev"><i class="icon icon--arrow-left"></i><span
+						class="text-hidden">Previous Project</span></button>
+				<button class="button button--zoom"><i class="icon icon--zoom"></i><span class="text-hidden">View
+						details</span></button>
+				<button class="button button--nav-next"><i class="icon icon--arrow-right"></i><span
+						class="text-hidden">Next Project</span></button>
+			</nav>
+		</section>
+		<!-- /slider-->
 
-    <!--Main content-->
-    <div class="row">
-      <div class="col s12 m3 l3">
-        <div class="card">
-          <div class="card-image">
-            <img src="../static/images/starter.png">
-            <span class="card-title black-text">Hors Devours</span>
-          </div>
-          <div class="card-content">
-            <h6>Introduction to web development</h6>
-            <p>Looking at the various building blocks and settling down to a 30-day roller coaster ride</p>
-            <p></p>
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m3 l3">
-        <div class="card">
-          <div class="card-image">
-            <img src="../static/images/soup.png">
-            <span class="card-title black-text">Soup Dish</span>
-          </div>
-          <div class="card-content">
-            <h6>Wireframing</h6>
-            <p>Sneak - peek at UI Design and how to create a website's blueprint</p>
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m3 l3">
-        <div class="card">
-          <div class="card-image">
-            <img src="../static/images/fish.png">
-            <span class="card-title black-text">Fish Dish</span>
-          </div>
-          <div class="card-content">
-            <h6>Examining the structure of a website</h6>
-            <p>Introduction to HTML and identifying the various building blocks of a website</p>
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m3 l3">
-        <div class="card">
-          <div class="card-image">
-            <img src="../static/images/meat.png">
-            <span class="card-title black-text">Meat Dish</span>
-          </div>
-          <div class="card-content">
-            <h6>Introduction to CSS</h6>
-            <p>First steps towards transforming the
-              ugly duckling into a beautiful swan</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s12 m3 l3">
-        <div class="card">
-          <div class="card-image">
-            <img src="../static/images/main.png">
-            <span class="card-title black-text">Main Dish</span>
-          </div>
-          <div class="card-content">
-            <h6>Diving deeper into CSS</h6>
-            <p>Whetting our appetite with more CSS and a LIVE design challenge</p>
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m3 l3">
-        <div class="card">
-          <div class="card-image">
-            <img src="../static/images/salad.png">
-            <span class="card-title black-text">Salad</span>
-          </div>
-          <div class="card-content">
-            <h6>Media Queries with CSS</h6>
-            <p>Making our website responsive across all screen sizes</p>
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m3 l3">
-        <div class="card">
-          <div class="card-image">
-            <img src="../static/images/dessert.png">
-            <span class="card-title black-text">Dessert</span>
-          </div>
-          <div class="card-content">
-            <h6>CSS Animations and JS Events</h6>
-            <p>Sprinkling a bit of sugar and all the
-              wonderful stuff on our website</p>
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m3 l3">
-        <div class="card">
-          <div class="card-image">
-            <img src="../static/images/drink.png">
-            <span class="card-title black-text">Drink</span>
-          </div>
-          <div class="card-content">
-            <h6>Deploying our website</h6>
-            <p>While I talk about my journey from a
-              Noob to a Dude. #OneLastDance</p>
-          </div>
-        </div>
-      </div>
-    </div>
+		<!--Bottom links-->
+		<ul class="bottom-links-services">
+			<li>
+				<a id="home" class="left-arrow light-links" href="../home.html">home</a>
+			</li>
+			<li>
+				<a id="clients" class="right-arrow light-links" href="./fsd.html">fsd</a>
+			</li>
+		</ul>
 
-  </div>
-  <script src="../js/home.js"></script>
+
+
+		<!--Slider content-->
+		<section class="content">
+			<div class="content__item" id="content-1">
+				<img class="content__item-img rounded-right" src="../static/images/starter.png"
+					alt="Apple Watch Content" />
+				<div class="content__item-inner">
+					<h2>Introduction to web development</h2>
+					<h3>Kickstart your web development journey</h3>
+					<p>Topics covered in the live discussion: </p><br>
+					<ul>
+						<li>What is HTML? Why do we need it?</li><br>
+						<li>What is CSS? What can we do with it?</li><br>
+						<li>Sneak peek at when to use JavaScript in our websites</li><br>
+						<li>Q&A session to clear all your doubts</li><br>
+					</ul>
+					<p><a href="mailto:swaruphegde@gmail.com">Have feedbacks? Write a mail to your captain</a>
+					</p>
+				</div>
+			</div>
+			<div class="content__item" id="content-2">
+				<img class="content__item-img rounded-right" src="../static/images/soup.png"
+					alt="iPad Mini Content" />
+				<div class="content__item-inner">
+					<h2>Introduction to wireframing</h2>
+					<h3>Where your creativity meets your passion</h3>
+					<p>Topics covered in the live discussion: </p><br>
+					<ul>
+						<li>What is a wireframe and is it really necessary to build one?</li><br>
+						<li>Designing a portfolio website live and examining the do's and don'ts of UI/UX design</li><br>
+						<li>A 10-minute design challenge where your topic will be designed by the captain in 10 minutes</li>
+						<li>Q&A session to clear all your doubts</li><br>
+					</ul>
+					<p><a href="mailto:swaruphegde@gmail.com">Have feedbacks? Write a mail to your captain</a>
+					</p>
+				</div>
+			</div>
+			<div class="content__item" id="content-3">
+				<img class="content__item-img rounded-right" src="../static/images/fish.png"
+					alt="MacBook Content" />
+					<div class="content__item-inner">
+						<h2>Introduction to HTML</h2>
+						<h3>Creating the structure of the workshop's project</h3>
+						<p>Topics covered in the live discussion: </p><br>
+						<ul>
+							<li>How to break a website down into its structural elements</li><br>
+							<li>Converting a wireframe into an HTML file</li><br>
+							<li>Creating the HTML file of our website</li>
+							<li>Q&A session to clear all your doubts</li><br>
+						</ul>
+						<p><a href="mailto:swaruphegde@gmail.com">Have feedbacks? Write a mail to your captain</a>
+						</p>
+					</div>
+			</div>
+			<div class="content__item" id="content-4">
+				<img class="content__item-img rounded-right" src="../static/images/meat.png"
+					alt="iMac Content" />
+				<div class="content__item-inner">
+					<h2>Introduction to CSS</h2>
+					<h3>Adding CSS to our website to make it look more appealing</h3>
+					<p>Topics covered in the live discussion: </p><br>
+						<ul>
+							<li>Various ways of adding CSS to an html file and their advantages and disadvantages</li><br>
+							<li>Writing CSS rulesets for the mobile view of our website</li><br>
+							<li>Q&A session to clear all your doubts</li><br>
+						</ul>
+						<p><a href="mailto:swaruphegde@gmail.com">Have feedbacks? Write a mail to your captain</a>
+						</p>
+				</div>
+			</div>
+			<div class="content__item" id="content-5">
+				<img class="content__item-img rounded-right" src="../static/images/main.png"
+					alt="MacBook Content" />
+					<div class="content__item-inner">
+						<h2>Diving deeper into CSS</h2>
+						<h3>Completing the mobile view of our website</h3>
+						<p>Topics covered in the live discussion: </p><br>
+							<ul>
+								<li>CSS positions and flexbox</li><br>
+								<li>Writing CSS rulesets and completing the mobile view</li><br>
+								<li>Q&A session to clear all your doubts</li><br>
+							</ul>
+							<p><a href="mailto:swaruphegde@gmail.com">Have feedbacks? Write a mail to your captain</a>
+							</p>
+					</div>
+			</div>
+			<div class="content__item" id="content-6">
+				<img class="content__item-img rounded-right" src="../static/images/salad.png"
+					alt="MacBook Content" />
+					<div class="content__item-inner">
+						<h2>Media queries in CSS</h2>
+						<h3>Making our website responsive</h3>
+						<p>Topics covered in the live discussion: </p><br>
+							<ul>
+								<li>What is a responsive website and why should websites be responsive?</li><br>
+								<li>Implementing media queries in our website to make it responsive</li><br>
+								<li>Q&A session to clear all your doubts</li><br>
+							</ul>
+							<p><a href="mailto:swaruphegde@gmail.com">Have feedbacks? Write a mail to your captain</a>
+							</p>
+					</div>
+      </div>
+      <div class="content__item" id="content-7">
+				<img class="content__item-img rounded-right" src="../static/images/dessert.png"
+					alt="MacBook Content" />
+					<div class="content__item-inner">
+						<h2>Introduction to CSS animations and JS events</h2>
+						<h3>Adding animations to our website and looking at a bit of JS</h3>
+						<p>Topics covered in the live discussion: </p><br>
+							<ul>
+								<li>How to animate HTML elements in CSS</li><br>
+								<li>DOM manipulation using JavaScript</li><br>
+								<li>Q&A session to clear all your doubts</li><br>
+							</ul>
+							<p><a href="mailto:swaruphegde@gmail.com">Have feedbacks? Write a mail to your captain</a>
+							</p>
+					</div>
+      </div>
+      <div class="content__item" id="content-8">
+				<img class="content__item-img rounded-right" src="../static/images/drink.png"
+					alt="MacBook Content" />
+					<div class="content__item-inner">
+						<h2>Career talks, next steps and deploying your website</h2>
+						<h3>What comes after the workshop and after you're done developing your website</h3>
+						<p>Topics covered in the live discussion: </p><br>
+							<ul>
+								<li>My journey from a noob to a dude</li><br>
+								<li>My hackathon projects</li><br>
+								<li>Deploying a website on various platforms ( FOR FREE )!</li><br>
+								<li>Q&A session on careers and next steps</li><br>
+							</ul>
+							<p><a href="mailto:swaruphegde@gmail.com">Have feedbacks? Write a mail to your captain</a>
+							</p>
+					</div>
+			</div>
+
+
+
+			<button class="button button--close"><i class="icon icon--circle-cross"></i><span class="text-hidden">Close
+					content</span></button>
+		</section>
+	</div>
+
+	<script src="../js/classie.js"></script>
+	<script src="../js/dynamics.min.js"></script>
+	<script src="../js/main.js"></script>
+
+
+	<!-- For the demo ad only -->
+	<script src="//tympanus.net/codrops/adpacks/demoad.js"></script>
+	<script src="../js/index.js"></script>
 
 </body>
 
