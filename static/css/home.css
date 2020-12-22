@@ -119,11 +119,10 @@ a{
 
 .island{
     position: absolute;
-    width: 80%;
-    left: 10%;
-    top: 40%;
+    width: 60%;
+    left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
-    animation: bob 2.9s infinite;
 }
 
 .theme-switcher{
@@ -137,17 +136,7 @@ a{
     margin-right: 2em;
 }
 
-@keyframes bob{
-    0%{
-        transform: translateY(0px);
-    }
-    50%{
-        transform: translateY(20px);
-    }
-    100%{
-        transform: translateY(0px);
-    }
-}
+
 
 .collection{
     position: absolute;
@@ -202,9 +191,7 @@ a{
     .side-nav{
         left: -40%;
     }
-    .island{
-        top: 35%;
-    }
+    
     .terms{
         height: 78%;
     }
@@ -214,9 +201,7 @@ a{
     .side-nav{
         left: -35%;
     }
-    .island{
-        top: 33%;
-    }
+    
     .terms{
         height: 70%;
     }
@@ -226,11 +211,7 @@ a{
     .side-nav{
         left: -30%;
     }
-    .island{
-        width: 60%;
-        top: 38%;
-        left: 20%;
-    }
+    
     .theme-switcher{
         width: 11%;
     }
@@ -243,22 +224,13 @@ a{
     .side-nav{
         left: -25%;
     }
-    .island{
-        width: 50%;
-        top: 38%;
-        left: 25%;
-    }
 }
 
 @media only screen and (min-width: 745px){
     .side-nav{
         left: -20%;
     }
-    .island{
-        width: 50%;
-        top: 35%;
-        left: 25%;
-    }
+    
     .terms{
         height: 60%;
     }
@@ -268,11 +240,7 @@ a{
     .side-nav{
         left: -15%;
     }
-    .island{
-        width: 40%;
-        top: 35%;
-        left: 30%;
-    }
+    
 }
 
 @media only screen and (min-width: 1024px){
@@ -293,8 +261,8 @@ a{
         width: 50%;
     }
     .island{
-        left: 55%;
-        top: 30%;
+        width: 35%;
+        left: 75%;
     }
     .side-nav{
         left: -18%;
@@ -305,9 +273,6 @@ a{
 @media only screen and (min-width: 1260px){
     .side-nav{
         left: -13%;
-    }
-    .island{
-        top: 25%;
     }
     .terms{
         height: 65%;
