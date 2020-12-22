@@ -326,10 +326,10 @@ a{
         stroke: #FF00FF;
     }
     25%{
-        stroke: greenyellow;
+        stroke: rgb(42, 212, 127);
     }
     50%{
-        stroke: #00FFFF;
+        stroke: #0062ff;
     }
     100%{
         stroke: tomato;
