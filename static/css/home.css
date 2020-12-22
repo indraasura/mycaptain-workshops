@@ -120,10 +120,12 @@ a{
 .island{
     position: absolute;
     width: 60%;
-    left: 51%;
+    left: 53%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
+
 
 .theme-switcher{
     width: 15%;
@@ -262,6 +264,7 @@ a{
     }
     .island{
         width: 35%;
+        top: 53%;
         left: 75%;
     }
     .side-nav{
@@ -297,6 +300,59 @@ a{
     .terms{
         height: 60%;
     }
+}
+
+
+/* Dark mode frame glow effects */
+
+#left-top-frame path, #right-top-frame path, #center-inner-frame path{
+    animation: bluetopink 1.5s infinite !important;
+   
+}
+
+#left-bottom-frame, #right-bottom-frame, #center-outer-frame{
+    animation: pinktoblue 1.5s infinite !important;
+}
+
+
+#island-dark path{
+    animation: lights 2.5s infinite;
+}
+
+
+
+@keyframes lights{
+    0%{
+        stroke: #FF00FF;
+    }
+    25%{
+        stroke: greenyellow;
+    }
+    50%{
+        stroke: #00FFFF;
+    }
+    100%{
+        stroke: tomato;
+    }
+}
+
+@keyframes bluetopink{
+    from{
+        stroke: #00FFFF;
+    }
+    to{
+        stroke: #FF00FF;
+    }
+}
+
+@keyframes pinktoblue{
+    from{
+        stroke: #FF00FF;
+    }
+    to{
+        stroke: #00FFFF;
+    }
+   
 }
 
 
