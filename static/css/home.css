@@ -121,7 +121,7 @@ a{
 .design-img, .html-img, .css-img{
     background-size: contain;
     position: absolute;
-    width: 45%;
+    width: 35%;
     left: 40%;
     top: 50%;
     animation: bob 2.5s infinite;
@@ -292,6 +292,10 @@ a{
     }
   
     .side-nav{
+        @indraasura
+        feat: new landing images
+        50072ad
+        
         left: -18%;
         font-size: 1.2em;
     }
@@ -338,7 +342,7 @@ a{
         height: 60%;
     }
     .design-img, .html-img, .css-img{
-        width: 20%;
+        width: 18%;
     }
 }
 
